@@ -1,0 +1,73 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.example:newsapp >-------------------------
+[INFO] Building newsapp 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.6:run (default-cli) > test-compile @ newsapp >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ newsapp ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ newsapp ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ newsapp ---
+[INFO] skip non existing resourceDirectory C:\Users\AIDS\Downloads\newsapp_springboot_docker\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ newsapp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.5.6:run (default-cli) < test-compile @ newsapp <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.6:run (default-cli) @ newsapp ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-10-12T10:39:37.678+05:30  INFO 17076 --- [newsapp] [           main] com.example.newsapp.NewsappApplication   : Starting NewsappApplication using Java 25.0.3 with PID 17076 (C:\Users\AIDS\Downloads\newsapp_springboot_docker\target\classes started by Admin in C:\Users\AIDS\Downloads\newsapp_springboot_docker)
+2026-10-12T10:39:37.679+05:30  INFO 17076 --- [newsapp] [           main] com.example.newsapp.NewsappApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-10-12T10:39:38.039+05:30  INFO 17076 --- [newsapp] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2026-10-12T10:39:38.046+05:30  INFO 17076 --- [newsapp] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-12T10:39:38.047+05:30  INFO 17076 --- [newsapp] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-10-12T10:39:38.070+05:30  INFO 17076 --- [newsapp] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-12T10:39:38.070+05:30  INFO 17076 --- [newsapp] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 370 ms
+2026-10-12T10:39:38.227+05:30  WARN 17076 --- [newsapp] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-10-12T10:39:38.233+05:30  INFO 17076 --- [newsapp] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-10-12T10:39:38.241+05:30 ERROR 17076 --- [newsapp] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on anoTerminate batch job (Y/N)? ------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.897 s
+[INFO] Finished at: 2026-10-12T10:39:38+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.5.6:run (default-cli) on project newsapp: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
